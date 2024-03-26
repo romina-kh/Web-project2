@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: myFirstFont;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(sansation_light.woff);
+ }
+ 
+ @font-face {
+    font-family: myFirstFont;
+    src: url(sansation_bold.woff);
+    font-weight: bold;
+ }
+ 
+
+.nav {
+    position: fixed; 
+    display: flex;
+    z-index: 1000;
+    width: 100%;    
+    background: #B19470;
+    align-items: center;
+    height: 100px;
+    
+}
+.nav a{
+    color : #76453B;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 30px;
+    font-size: 20px;
+
+    
+}
+.nav a:hover{
+    color: #43766C;
+    
+}
+
+.nav_gif{
+    height: 100px;
+    position: absolute;
+    right: 20px;
+}
+.nav_name{
+    height: 100px;
+    margin-left: 20px;
+}
