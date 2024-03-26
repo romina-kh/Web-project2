@@ -50,3 +50,33 @@
     height: 100px;
     margin-left: 20px;
 }
+
+.home_pic{
+    height: 500px;
+}
+.home{
+    background-color: #12372A;
+}
+
+.logo2{
+    height: 150px;
+    position: absolute;
+    right: 20px;
+    top :350px;
+}
+
+.logo1{
+    height: 80px;
+    left: 920px;
+    top: 120px;
+    position: absolute;
+}
+
+.home_p{
+    color: #F8FAE5 ;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    position: absolute;
+    left: 970px;
+    top: 250px;
+}
