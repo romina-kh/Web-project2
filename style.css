@@ -71,43 +71,52 @@
     left: 970px;
     top: 250px;
 }
+
 .menu{
-    display: grid;
-    grid-template-columns: 600px 10px;
-    margin: 10px 300px;
-
+    height: 600px;
+    background-color: #f4e5d4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 
-.menu1{
-    border: 5px double #290001;
-    width: 300px;
-    height: 300px;
-
-    background-color: #290001;
-
-}
-
-.menu1:hover {
-    background-color: #76453B;
-    width: 200px;
-    height: 300px;
-    transition:
-    width 1s,
-    height 1s,
-    background-color 1s,
-    rotate 1s;
-    rotate: 380deg;
-  }
-
-.menu_in{
-    background: rgb(207,179,145);
-    background: linear-gradient(90deg, rgba(207,179,145,1) 10%, rgba(177,148,112,1) 48%, rgba(141,97,88,1) 100%);
-    position: relative;
+.card{
+    width: 350px;
+    height: 500px;
+    background-image: url(pictures/menu.jpg);
+    background-size: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 10px 0 20px rgb(0,0,0 , 0.4);
+    transform: perspective(2000px);
+    transform-style: preserve-3d;
     text-align: center;
-    border-radius: 10% 25%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     color: #290001;
+    
 }
 
+.cover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #290001;
+    border-radius: 10px;
+    transform-origin: left;
+    transform-style: preserve-3d;
+    transition: all 1s ease;
+ 
+}
 
+.card:hover .cover{
+    transform: rotateY(-135deg);
+}
 
+.menu_t {
+    padding-top: 110px;
+}
+.menu_t h4{
+    margin-top: 7px;
+}
