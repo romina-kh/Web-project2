@@ -78,10 +78,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+
 }
 
-.card{
+.inside{
     width: 350px;
     height: 500px;
     background-image: url(pictures/menu.jpg);
@@ -97,6 +97,8 @@
 }
 
 .cover{
+    background-image: url(pictures/menu_cover.png);
+    background-size: cover;
     position: absolute;
     top: 0;
     left: 0;
@@ -110,8 +112,12 @@
  
 }
 
-.card:hover .cover{
+.inside:hover .cover{
     transform: rotateY(-135deg);
+    background-color: #290001;
+    background-image: url(pictures/brown.png);
+    background-size: cover;
+
 }
 
 .menu_t {
